@@ -1,0 +1,26 @@
+--cpu Cortex-M3
+"rf69\startup_stm32f103xb.o"
+"rf69\stm32f1xx_hal_msp.o"
+"rf69\stm32f1xx_it.o"
+"rf69\main.o"
+"rf69\rfm69.o"
+"rf69\hardwarespi.o"
+"rf69\stm32f1xx_hal_pwr.o"
+"rf69\stm32f1xx_hal_tim_ex.o"
+"rf69\stm32f1xx_hal_gpio_ex.o"
+"rf69\stm32f1xx_hal_dma.o"
+"rf69\stm32f1xx_hal_flash_ex.o"
+"rf69\stm32f1xx_hal_rcc_ex.o"
+"rf69\stm32f1xx_hal_spi_ex.o"
+"rf69\stm32f1xx_hal_gpio.o"
+"rf69\stm32f1xx_hal_tim.o"
+"rf69\stm32f1xx_hal_spi.o"
+"rf69\stm32f1xx_hal_rcc.o"
+"rf69\stm32f1xx_hal_flash.o"
+"rf69\stm32f1xx_hal.o"
+"rf69\stm32f1xx_hal_cortex.o"
+"rf69\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "RF69\RF69.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "RF69.map" -o RF69\RF69.axf
