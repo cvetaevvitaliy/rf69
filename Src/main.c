@@ -41,12 +41,13 @@
 #include "stm32f1xx_hal.h"
 
 /* USER CODE BEGIN Includes */
+#include "RFM69.h"
 
 /* USER CODE END Includes */
 
 /* Private variables ---------------------------------------------------------*/
 SPI_HandleTypeDef hspi1;
-
+RFM69 rfm69w;
 /* USER CODE BEGIN PV */
 /* Private variables ---------------------------------------------------------*/
 
@@ -97,7 +98,10 @@ int main(void)
   MX_GPIO_Init();
   MX_SPI1_Init();
   /* USER CODE BEGIN 2 */
-
+ if( rfm69w.initialize(RF69_433MHZ,1)==0)
+ {
+ 
+ }
   /* USER CODE END 2 */
 
   /* Infinite loop */

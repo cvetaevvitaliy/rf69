@@ -402,7 +402,7 @@
             </File>
             <File>
               <FileName>main.c</FileName>
-              <FileType>1</FileType>
+              <FileType>8</FileType>
               <FilePath>../Src/main.c</FilePath>
             </File>
             <File>

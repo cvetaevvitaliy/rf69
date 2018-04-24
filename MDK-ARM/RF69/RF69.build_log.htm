@@ -21,7 +21,7 @@ Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.0.1.0
 Dialog DLL:      TCM.DLL V1.32.0.0
  
 <h2>Project:</h2>
-D:\STM32\RF69\MDK-ARM\RF69.uvprojx
+D:\STM32\RF69\rf69\MDK-ARM\RF69.uvprojx
 Project File Date:  04/24/2018
 
 <h2>Output:</h2>
@@ -29,10 +29,13 @@ Project File Date:  04/24/2018
 *** Warning: Using Microlib and C++ file(s) might cause the linker to fail !
   
 Build target 'RF69'
-compiling RFM69.c...
+compiling main.c...
 linking...
-Program Size: Code=3326 RO-data=286 RW-data=16 ZI-data=1112  
-"RF69\RF69.axf" - 0 Error(s), 0 Warning(s).
+RF69\RF69.axf: Error: L6218E: Undefined symbol RFM69::RFM69(unsigned char, unsigned char, bool, unsigned char) (referred from main.o).
+Not enough information to list image symbols.
+Not enough information to list load addresses in the image map.
+Finished: 2 information, 0 warning and 1 error messages.
+"RF69\RF69.axf" - 1 Error(s), 0 Warning(s).
 
 <h2>Software Packages used:</h2>
 
@@ -55,6 +58,7 @@ Package Vendor: Keil
 <h2>Collection of Component Files used:</h2>
 
    * Component: ARM::CMSIS:CORE:5.1.1
+Target not created.
 Build Time Elapsed:  00:00:01
 </pre>
 </body>
